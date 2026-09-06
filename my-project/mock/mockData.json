@@ -1,0 +1,4763 @@
+{
+  "users": [
+    {
+      "id": "usr_owner_01",
+      "name": "Rehman Khan",
+      "email": "rehman@workspace.com",
+      "password": "OwnerPassword123!",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256",
+      "systemRole": "owner",
+      "jobTitle": "Founder & Director",
+      "department": "Product"
+    },
+    {
+      "id": "usr_admin_02",
+      "name": "Faizan Ahmed",
+      "email": "faizan@workspace.com",
+      "password": "AdminPassword123!",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=256",
+      "systemRole": "admin",
+      "jobTitle": "Engineering Lead",
+      "department": "Engineering"
+    },
+    {
+      "id": "usr_member_03",
+      "name": "Abdullah Siddiqui",
+      "email": "abdullah@workspace.com",
+      "password": "MemberPassword123!",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=256",
+      "systemRole": "member",
+      "jobTitle": "Frontend Developer",
+      "department": "Engineering"
+    },
+    {
+      "id": "usr_viewer_04",
+      "name": "Usman Malik",
+      "email": "usman@workspace.com",
+      "password": "ViewerPassword123!",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=256",
+      "systemRole": "viewer",
+      "jobTitle": "QA Analyst",
+      "department": "Product"
+    }
+  ],
+  "workspaces": [
+    {
+      "id": "ws_tech_01",
+      "name": "Acme Tech & Product Platform",
+      "icon": "code",
+      "color": "#3B82F6",
+      "memberIds": [
+        "usr_owner_01",
+        "usr_admin_02",
+        "usr_member_03",
+        "usr_viewer_04"
+      ],
+      "defaultView": "board",
+      "ownerId": "usr_owner_01"
+    },
+    {
+      "id": "ws_mktg_02",
+      "name": "Global Growth & Brand Ops",
+      "icon": "sparkles",
+      "color": "#EC4899",
+      "memberIds": [
+        "usr_owner_01",
+        "usr_admin_02",
+        "usr_member_03",
+        "usr_viewer_04"
+      ],
+      "defaultView": "list",
+      "ownerId": "usr_owner_01"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_mobile_01",
+      "workspaceId": "ws_tech_01",
+      "name": "Next-Gen Mobile Application",
+      "description": "Cross-platform iOS & Android rebuild targeting 60fps animations and seamless offline synchronization.",
+      "icon": "smartphone",
+      "color": "#6366F1",
+      "memberIds": [
+        "usr_owner_01",
+        "usr_admin_02",
+        "usr_member_03",
+        "usr_viewer_04"
+      ],
+      "leadId": "usr_admin_02",
+      "isArchived": false
+    },
+    {
+      "id": "proj_ds_02",
+      "workspaceId": "ws_tech_01",
+      "name": "Design System 3.0 Refactor",
+      "description": "Unified tokenized component library built with Tailwind CSS, Radix UI primitives, and dark mode dynamics.",
+      "icon": "palette",
+      "color": "#8B5CF6",
+      "memberIds": [
+        "usr_owner_01",
+        "usr_admin_02",
+        "usr_member_03"
+      ],
+      "leadId": "usr_viewer_04",
+      "isArchived": false
+    },
+    {
+      "id": "proj_cloud_03",
+      "workspaceId": "ws_tech_01",
+      "name": "Cloud Core & Realtime Engine",
+      "description": "High-throughput Edge API runtime, WebSocket state synchronization, and immutable client event log store.",
+      "icon": "cloud",
+      "color": "#06B6D4",
+      "memberIds": [
+        "usr_owner_01",
+        "usr_admin_02",
+        "usr_member_03"
+      ],
+      "leadId": "usr_admin_02",
+      "isArchived": false
+    },
+    {
+      "id": "proj_brand_04",
+      "workspaceId": "ws_mktg_02",
+      "name": "Q4 Global Rebranding Campaign",
+      "description": "Complete overhaul of corporate visual identity, tone of voice guidelines, media assets, and press kits.",
+      "icon": "megaphone",
+      "color": "#F59E0B",
+      "memberIds": [
+        "usr_owner_01",
+        "usr_admin_02",
+        "usr_member_03",
+        "usr_viewer_04"
+      ],
+      "leadId": "usr_owner_01",
+      "isArchived": false
+    },
+    {
+      "id": "proj_launch_05",
+      "workspaceId": "ws_mktg_02",
+      "name": "Enterprise Summit 2026 Keynote",
+      "description": "Annual developer & executive customer conference presentation, interactive demos, and keynote collateral.",
+      "icon": "ticket",
+      "color": "#10B981",
+      "memberIds": [
+        "usr_owner_01",
+        "usr_admin_02",
+        "usr_viewer_04"
+      ],
+      "leadId": "usr_owner_01",
+      "isArchived": false
+    },
+    {
+      "id": "proj_cx_06",
+      "workspaceId": "ws_mktg_02",
+      "name": "Customer Journey & Analytics Hub",
+      "description": "User retention telemetry, Net Promoter Score feedback aggregation, and onboarding conversion funnels.",
+      "icon": "pie-chart",
+      "color": "#EF4444",
+      "memberIds": [
+        "usr_owner_01",
+        "usr_admin_02",
+        "usr_member_03",
+        "usr_viewer_04"
+      ],
+      "leadId": "usr_admin_02",
+      "isArchived": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_proj_mobile_01_1",
+      "projectId": "proj_mobile_01",
+      "title": "Implement Biometric Auth Flow (FaceID / TouchID)",
+      "description": "Integrate Native Keychain API with fallback PIN authentication for iOS & Android.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "dueDate": "2026-09-06T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Security",
+        "Mobile",
+        "Auth"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_1_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_1_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_1_3",
+          "title": "Run unit test suite",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_mobile_01_1_1",
+          "name": "implement_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-01T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_mobile_01_2",
+      "projectId": "proj_mobile_01",
+      "title": "Optimize Offline SQLite Cache Synchronization",
+      "description": "Ensure optimistic UI updates automatically queue and retry failed payload syncs upon network recovery.",
+      "status": "in_review",
+      "priority": "high",
+      "dueDate": "2026-09-07T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "Offline",
+        "Database"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_2_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_2_2",
+          "title": "Add inline documentation",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_2_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-01T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_mobile_01_3",
+      "projectId": "proj_mobile_01",
+      "title": "Design Mobile Navigation Drawer & Bottom Tabs",
+      "description": "Create responsive gesture-driven drawer navigation with smooth spring physics animations.",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": null,
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "UI/UX",
+        "Navigation"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_3_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_3_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_3_3",
+          "title": "Deploy preview branch",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_mobile_01_3_1",
+          "name": "design_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-02T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-02T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_mobile_01_4",
+      "projectId": "proj_mobile_01",
+      "title": "Configure Push Notifications with FCM & APNS",
+      "description": "Set up silent background data pushes and user interaction handlers.",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-09-09T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Notifications",
+        "Backend"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_4_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_4_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_4_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-02T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_mobile_01_5",
+      "projectId": "proj_mobile_01",
+      "title": "Audit Mobile Memory Leaks in Video Player",
+      "description": "Investigate texture buffer allocation overhead on long scrollable feed lists.",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-09-10T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_member_03",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Performance",
+        "Debugging"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_5_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_5_2",
+          "title": "Update storybook docs",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_5_3",
+          "title": "Notify team on Slack",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_mobile_01_5_1",
+          "name": "audit_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-03T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-03T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_mobile_01_6",
+      "projectId": "proj_mobile_01",
+      "title": "Implement Deep Linking Scheme (`acme://task/:id`)",
+      "description": "Enable universal links for external web previews and email notification redirects.",
+      "status": "in_progress",
+      "priority": "low",
+      "dueDate": "2026-09-11T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Routing",
+        "DX"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_6_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_6_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_6_3",
+          "title": "Run unit test suite",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-03T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_mobile_01_7",
+      "projectId": "proj_mobile_01",
+      "title": "Add Haptic Feedback to Task Gesture Swipe Actions",
+      "description": "Integrate subtle tactile vibration on swipe-to-complete and drag-and-drop ordering.",
+      "status": "done",
+      "priority": "low",
+      "dueDate": null,
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "UI/UX",
+        "Micro-Interactions"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_7_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_7_2",
+          "title": "Add inline documentation",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_7_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_mobile_01_7_1",
+          "name": "add_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-04T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_mobile_01_8",
+      "projectId": "proj_mobile_01",
+      "title": "Setup Automated iOS App Store Fastlane Deployments",
+      "description": "Script TestFlight build releases tied to main branch GitHub merge events.",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-09-13T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "DevOps",
+        "CI/CD"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_8_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_8_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_8_3",
+          "title": "Deploy preview branch",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-04T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_mobile_01_9",
+      "projectId": "proj_mobile_01",
+      "title": "Build In-App Crash Reporting & Sentry Diagnostics",
+      "description": "Capture JS runtime exceptions and native stack traces with contextual breadcrumbs.",
+      "status": "in_review",
+      "priority": "urgent",
+      "dueDate": "2026-09-14T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Monitoring",
+        "Stability"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_9_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_9_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_9_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_mobile_01_9_1",
+          "name": "build_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-05T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-05T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_mobile_01_10",
+      "projectId": "proj_mobile_01",
+      "title": "Refactor Dark Mode Color Tokens for OLED Displays",
+      "description": "Replace dark gray backgrounds with true black `#000000` accents for battery optimization.",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-15T10:00:00.000Z",
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Design System",
+        "Theme"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_mobile_01_10_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_10_2",
+          "title": "Update storybook docs",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_mobile_01_10_3",
+          "title": "Notify team on Slack",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-05T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_1",
+      "projectId": "proj_ds_02",
+      "title": "Migrate Color Palette to Tailwind v4 CSS Variables",
+      "description": "Refactor root theme variables to OKLCH color space for dynamic contrast adjustment.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "dueDate": "2026-09-06T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_viewer_04",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Tailwind",
+        "CSS"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_1_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_ds_02_1_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_ds_02_1_3",
+          "title": "Run unit test suite",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_ds_02_1_1",
+          "name": "migrate_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-01T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_2",
+      "projectId": "proj_ds_02",
+      "title": "Build Accessible Data Table Component with Resizable Columns",
+      "description": "Construct WCAG AAA compliant grid component with sorting, filtering, and keyboard navigation.",
+      "status": "in_review",
+      "priority": "high",
+      "dueDate": "2026-09-07T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_viewer_04",
+      "labels": [
+        "Accessibility",
+        "Components"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_2_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_ds_02_2_2",
+          "title": "Add inline documentation",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_ds_02_2_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-01T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_3",
+      "projectId": "proj_ds_02",
+      "title": "Create Interactive Command Palette (`Cmd + K`) Modal",
+      "description": "Implement fuzzy search dialog for quick navigation across workspaces, tasks, and users.",
+      "status": "done",
+      "priority": "high",
+      "dueDate": null,
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "UX",
+        "Keyboard"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_3_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_ds_02_3_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_ds_02_3_3",
+          "title": "Deploy preview branch",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_ds_02_3_1",
+          "name": "create_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-02T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-02T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_4",
+      "projectId": "proj_ds_02",
+      "title": "Publish Storybook 8 Documentation & Live Demos",
+      "description": "Generate auto-updating component documentation site hosted on Cloudflare Pages.",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-09-09T10:00:00.000Z",
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Docs",
+        "Storybook"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_4_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_ds_02_4_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_ds_02_4_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-02T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_5",
+      "projectId": "proj_ds_02",
+      "title": "Design Glassmorphism Modal Dialog Primitive",
+      "description": "Build backdrop-filter blur modal overlays with subtle noise textures and smooth scale-in transitions.",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": null,
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Styling",
+        "Visual"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_5_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_ds_02_5_2",
+          "title": "Update storybook docs",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_ds_02_5_3",
+          "title": "Notify team on Slack",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_ds_02_5_1",
+          "name": "design_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-03T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-03T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_6",
+      "projectId": "proj_ds_02",
+      "title": "Extract Reusable Rich Text Editor with Slash Commands",
+      "description": "Integrate Tiptap headless editor with custom task mention nodes and markdown exports.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "dueDate": "2026-09-11T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Editor",
+        "Feature"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_6_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_ds_02_6_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_ds_02_6_3",
+          "title": "Run unit test suite",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-03T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_7",
+      "projectId": "proj_ds_02",
+      "title": "Add Drag-and-Drop Kanban Board Component Primitives",
+      "description": "Leverage HTML5 Drag API with collision detection and placement feedback.",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-09-12T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_member_03",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Kanban",
+        "Interactive"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_7_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_ds_02_7_2",
+          "title": "Add inline documentation",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_ds_02_7_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_ds_02_7_1",
+          "name": "add_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-04T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_8",
+      "projectId": "proj_ds_02",
+      "title": "Optimize Icon Library Tree-Shaking & Bundle Size",
+      "description": "Replace heavy SVG bundle imports with dynamic inline SVG sprite system.",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-13T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "Optimization",
+        "Bundling"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_8_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_ds_02_8_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_ds_02_8_3",
+          "title": "Deploy preview branch",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-04T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_9",
+      "projectId": "proj_ds_02",
+      "title": "Implement Multi-Select Tag Selector & Color Picker",
+      "description": "Construct flexible tag pill component with color picker dropdown and search filtering.",
+      "status": "done",
+      "priority": "low",
+      "dueDate": null,
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Form",
+        "UI"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_9_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_ds_02_9_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_ds_02_9_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_ds_02_9_1",
+          "name": "implement_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-05T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-05T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_ds_02_10",
+      "projectId": "proj_ds_02",
+      "title": "Audit Keyboard Focus Rings Across All Interactive Buttons",
+      "description": "Ensure focus-visible outline rings remain crisp across Chrome, Safari, and Firefox browsers.",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-15T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_viewer_04",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "A11y",
+        "QA"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_ds_02_10_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_ds_02_10_2",
+          "title": "Update storybook docs",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_ds_02_10_3",
+          "title": "Notify team on Slack",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-05T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_1",
+      "projectId": "proj_cloud_03",
+      "title": "Architect Client-Side Redux State Persistence Layer",
+      "description": "Configure IndexedDB backed middleware for Redux Toolkit to preserve offline workspace snapshots.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "dueDate": "2026-09-06T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Redux",
+        "Architecture"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_1_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_1_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_1_3",
+          "title": "Run unit test suite",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cloud_03_1_1",
+          "name": "architect_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-01T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_2",
+      "projectId": "proj_cloud_03",
+      "title": "Implement Optimistic UI Mutation Pipeline",
+      "description": "Dispatch Redux actions immediately while logging undo/redo history in state store.",
+      "status": "in_review",
+      "priority": "high",
+      "dueDate": "2026-09-07T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "State Management",
+        "DX"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_2_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_2_2",
+          "title": "Add inline documentation",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_2_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-01T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_3",
+      "projectId": "proj_cloud_03",
+      "title": "Design Event-Driven Activity Logger System",
+      "description": "Create centralized event bus subscriber that logs all workspace mutations into local storage.",
+      "status": "done",
+      "priority": "high",
+      "dueDate": null,
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "Audit Log",
+        "Core"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_3_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_3_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_3_3",
+          "title": "Deploy preview branch",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cloud_03_3_1",
+          "name": "design_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-02T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-02T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_4",
+      "projectId": "proj_cloud_03",
+      "title": "Build Client-Side Full-Text Search Engine with FlexSearch",
+      "description": "Index workspace tasks, descriptions, and comments in memory for instantaneous search responses.",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-09-09T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_member_03",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Search",
+        "Performance"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_4_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_4_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_4_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-02T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_5",
+      "projectId": "proj_cloud_03",
+      "title": "Construct Mock WebSockets Sync Gateway",
+      "description": "Simulate multi-tab live sync notifications using BroadcastChannel browser API.",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-09-10T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Realtime",
+        "Sync"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_5_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_5_2",
+          "title": "Update storybook docs",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_5_3",
+          "title": "Notify team on Slack",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cloud_03_5_1",
+          "name": "construct_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-03T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-03T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_6",
+      "projectId": "proj_cloud_03",
+      "title": "Develop Client JSON Import/Export Backup Engine",
+      "description": "Allow users to export entire workspace store to JSON file and restore with schema validation.",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": null,
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "Data",
+        "Export"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_6_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_6_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_6_3",
+          "title": "Run unit test suite",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-03T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_7",
+      "projectId": "proj_cloud_03",
+      "title": "Benchmark Large Dataset Rendering (>1,000 Tasks)",
+      "description": "Profile React virtualization DOM list nodes using tanstack react virtual.",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-09-12T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_member_03",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Virtualization",
+        "Benchmark"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_7_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_7_2",
+          "title": "Add inline documentation",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_7_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cloud_03_7_1",
+          "name": "benchmark_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-04T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_8",
+      "projectId": "proj_cloud_03",
+      "title": "Write Schema Validation Middleware for Redux Slices",
+      "description": "Verify incoming state payload shapes against Zod schemas on startup.",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-13T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Type Safety",
+        "Zod"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_8_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_8_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_8_3",
+          "title": "Deploy preview branch",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-04T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_9",
+      "projectId": "proj_cloud_03",
+      "title": "Implement Web Worker for Heavy Data Filtering & Sorting",
+      "description": "Offload complex timeline gantt calculations off the main UI rendering thread.",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-14T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "WebWorker",
+        "Performance"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_9_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_9_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_9_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cloud_03_9_1",
+          "name": "implement_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-05T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-05T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cloud_03_10",
+      "projectId": "proj_cloud_03",
+      "title": "Create Automated End-to-End Test Suite with Playwright",
+      "description": "Cover drag-and-drop task movements, filter changes, and workspace switching.",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-09-15T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Testing",
+        "E2E"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cloud_03_10_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_10_2",
+          "title": "Update storybook docs",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cloud_03_10_3",
+          "title": "Notify team on Slack",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-05T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_1",
+      "projectId": "proj_brand_04",
+      "title": "Finalize 2026 Brand Guidelines Deck & Typography Rules",
+      "description": "Publish revised brand typography system using Inter Display and JetBrains Mono fonts.",
+      "status": "done",
+      "priority": "urgent",
+      "dueDate": null,
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Brand",
+        "Design"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_1_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_brand_04_1_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_brand_04_1_3",
+          "title": "Run unit test suite",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_brand_04_1_1",
+          "name": "finalize_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-01T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_2",
+      "projectId": "proj_brand_04",
+      "title": "Design High-Resolution Vector Logo Variant Package",
+      "description": "Generate monochrome, dark-mode, icon mark, and stacked brand logo SVGs.",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-09-07T10:00:00.000Z",
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Assets",
+        "Vector"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_2_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_brand_04_2_2",
+          "title": "Add inline documentation",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_brand_04_2_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-01T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_3",
+      "projectId": "proj_brand_04",
+      "title": "Produce Marketing Hero Video & Motion Graphics",
+      "description": "Render 4K promo video showcasing Notion-like canvas and Jira-like project boards.",
+      "status": "in_review",
+      "priority": "urgent",
+      "dueDate": "2026-09-08T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_viewer_04",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Video",
+        "Motion"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_3_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_brand_04_3_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_brand_04_3_3",
+          "title": "Deploy preview branch",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_brand_04_3_1",
+          "name": "produce_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-02T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-02T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_4",
+      "projectId": "proj_brand_04",
+      "title": "Audit Social Media Image Banners & OG Meta Tags",
+      "description": "Create dynamic OpenGraph social share card templates for Twitter, LinkedIn, and GitHub.",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-09-09T10:00:00.000Z",
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_viewer_04",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Social",
+        "SEO"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_4_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_brand_04_4_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_brand_04_4_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-02T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_5",
+      "projectId": "proj_brand_04",
+      "title": "Refresh Corporate Email Newsletter Templates",
+      "description": "Code responsive HTML email templates tested across Outlook, Gmail, and Apple Mail.",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": null,
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_viewer_04",
+      "labels": [
+        "Email",
+        "Marketing"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_5_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_brand_04_5_2",
+          "title": "Update storybook docs",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_brand_04_5_3",
+          "title": "Notify team on Slack",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_brand_04_5_1",
+          "name": "refresh_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-03T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-03T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_6",
+      "projectId": "proj_brand_04",
+      "title": "Write Product Positioning Statement & Tone Guidelines",
+      "description": "Document clear copy rules for enterprise vs indie developer product messaging.",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-09-11T10:00:00.000Z",
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_viewer_04",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Copywriting",
+        "Messaging"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_6_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_brand_04_6_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_brand_04_6_3",
+          "title": "Run unit test suite",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-03T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_7",
+      "projectId": "proj_brand_04",
+      "title": "Create Merch & Swag Mockups for Developer Summit",
+      "description": "Design branded hoodies, sticker sheets, mechanical keyboard keycaps, and water bottles.",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-12T10:00:00.000Z",
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "Swag",
+        "Physical"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_7_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_brand_04_7_2",
+          "title": "Add inline documentation",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_brand_04_7_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_brand_04_7_1",
+          "name": "create_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-04T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_8",
+      "projectId": "proj_brand_04",
+      "title": "Coordinate Press Release Distribution with PR Agency",
+      "description": "Draft launch announcement embargoed for TechCrunch, ProductHunt, and HackerNews.",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-09-13T10:00:00.000Z",
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "PR",
+        "Launch"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_8_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_brand_04_8_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_brand_04_8_3",
+          "title": "Deploy preview branch",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-04T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_9",
+      "projectId": "proj_brand_04",
+      "title": "Build Digital Brand Asset Management (DAM) Portal",
+      "description": "Construct public web gallery for press to download high-res logos and product mockups.",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-09-14T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_viewer_04",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Web",
+        "Assets"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_9_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_brand_04_9_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_brand_04_9_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_brand_04_9_1",
+          "name": "build_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-05T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-05T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_brand_04_10",
+      "projectId": "proj_brand_04",
+      "title": "Conduct Competitor Visual Identity Comparison Study",
+      "description": "Analyze visual trends across Linear, Monday.com, Notion, and Jira Enterprise.",
+      "status": "done",
+      "priority": "low",
+      "dueDate": null,
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Research",
+        "Strategy"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_brand_04_10_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_brand_04_10_2",
+          "title": "Update storybook docs",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_brand_04_10_3",
+          "title": "Notify team on Slack",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-05T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_1",
+      "projectId": "proj_launch_05",
+      "title": "Book Keynote Speakers & Finalize Conference Schedule",
+      "description": "Confirm dates, contracts, and tech talks for 12 industry executive speakers.",
+      "status": "done",
+      "priority": "urgent",
+      "dueDate": null,
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Event",
+        "Keynote"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_1_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_launch_05_1_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_launch_05_1_3",
+          "title": "Run unit test suite",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_launch_05_1_1",
+          "name": "book_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-01T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_2",
+      "projectId": "proj_launch_05",
+      "title": "Build Summit 2026 Registration & Ticket Web App",
+      "description": "Construct responsive landing page with countdown timer and calendar export links.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "dueDate": "2026-09-07T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "Web",
+        "Registration"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_2_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_launch_05_2_2",
+          "title": "Add inline documentation",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_launch_05_2_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-01T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_3",
+      "projectId": "proj_launch_05",
+      "title": "Design Conference Badge & Access Pass Artwork",
+      "description": "Create printable RFID badge templates for VIPs, speakers, sponsors, and attendees.",
+      "status": "in_review",
+      "priority": "medium",
+      "dueDate": "2026-09-08T10:00:00.000Z",
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Print",
+        "Design"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_3_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_launch_05_3_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_launch_05_3_3",
+          "title": "Deploy preview branch",
+          "isCompleted": false,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_launch_05_3_1",
+          "name": "design_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-02T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-02T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_4",
+      "projectId": "proj_launch_05",
+      "title": "Set Up Live Stream Recording & Broadcasting Setup",
+      "description": "Coordinate 4K multi-camera streaming setup for YouTube Live and Twitch broadcast.",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-09-09T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "A/V",
+        "Streaming"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_4_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_launch_05_4_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_launch_05_4_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-02T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_5",
+      "projectId": "proj_launch_05",
+      "title": "Draft Executive Keynote Slide Deck & Product Demos",
+      "description": "Prepare 45-minute keynote presentation outlining client-side architectural vision.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "dueDate": "2026-09-10T10:00:00.000Z",
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_viewer_04",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Slides",
+        "Presentation"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_5_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_launch_05_5_2",
+          "title": "Update storybook docs",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_launch_05_5_3",
+          "title": "Notify team on Slack",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_launch_05_5_1",
+          "name": "draft_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-03T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-03T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_6",
+      "projectId": "proj_launch_05",
+      "title": "Coordinate Sponsor Booth Specifications & Assets",
+      "description": "Send exhibitor guidelines and artwork dimension specs to 15 summit sponsors.",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": null,
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_viewer_04",
+      "labels": [
+        "Sponsors",
+        "Ops"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_6_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_launch_05_6_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_launch_05_6_3",
+          "title": "Run unit test suite",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-03T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_7",
+      "projectId": "proj_launch_05",
+      "title": "Create Mobile Event Schedule Companion App",
+      "description": "Provide attendees with real-time room schedule updates and speaker Q&A submission.",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-09-12T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Mobile",
+        "App"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_7_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_launch_05_7_2",
+          "title": "Add inline documentation",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_launch_05_7_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_launch_05_7_1",
+          "name": "create_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-04T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_8",
+      "projectId": "proj_launch_05",
+      "title": "Organize VIP Dinner & Executive Networking Reception",
+      "description": "Reserve venue and confirm dietary preferences for 50 keynote speakers and sponsors.",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-13T10:00:00.000Z",
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Event",
+        "VIP"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_8_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_launch_05_8_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_launch_05_8_3",
+          "title": "Deploy preview branch",
+          "isCompleted": false,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-04T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_9",
+      "projectId": "proj_launch_05",
+      "title": "Publish Post-Event Survey & Feedback Form",
+      "description": "Draft rating questions for talks, venue quality, and product demo satisfaction.",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-14T10:00:00.000Z",
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_viewer_04",
+      "labels": [
+        "Feedback",
+        "Analytics"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_9_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_launch_05_9_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_launch_05_9_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": false,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_launch_05_9_1",
+          "name": "publish_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-05T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-05T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_launch_05_10",
+      "projectId": "proj_launch_05",
+      "title": "Edit Keynote Highlights Video for Social Release",
+      "description": "Cut 90-second hype video of top event moments for LinkedIn and YouTube Shorts.",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-09-15T10:00:00.000Z",
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_viewer_04",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Video",
+        "Social"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_launch_05_10_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_launch_05_10_2",
+          "title": "Update storybook docs",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_launch_05_10_3",
+          "title": "Notify team on Slack",
+          "isCompleted": false,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-05T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_1",
+      "projectId": "proj_cx_06",
+      "title": "Synthesize Q3 Customer Churn & Retention Data",
+      "description": "Analyze telemetry logs to identify top 3 friction points causing user drop-off.",
+      "status": "done",
+      "priority": "high",
+      "dueDate": null,
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "Analytics",
+        "Retention"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_1_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cx_06_1_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cx_06_1_3",
+          "title": "Run unit test suite",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cx_06_1_1",
+          "name": "synthesize_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-01T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_2",
+      "projectId": "proj_cx_06",
+      "title": "Automate Post-Onboarding NPS Survey Trigger",
+      "description": "Trigger subtle in-app rating modal after user creates their 5th active task.",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": null,
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "NPS",
+        "Automation"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_2_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cx_06_2_2",
+          "title": "Add inline documentation",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cx_06_2_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-01T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_3",
+      "projectId": "proj_cx_06",
+      "title": "Redesign User Onboarding Walkthrough Tour",
+      "description": "Build interactive step-by-step tooltip guide introducing board views and shortcuts.",
+      "status": "done",
+      "priority": "urgent",
+      "dueDate": null,
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "UX",
+        "Onboarding"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_3_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_cx_06_3_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_cx_06_3_3",
+          "title": "Deploy preview branch",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cx_06_3_1",
+          "name": "redesign_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-02T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-02T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_4",
+      "projectId": "proj_cx_06",
+      "title": "Publish Help Center Self-Service FAQ Articles",
+      "description": "Write 15 detailed step-by-step guides covering keyboard navigation and filtering.",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": null,
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_viewer_04",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Docs",
+        "Support"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_4_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cx_06_4_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cx_06_4_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-02T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_5",
+      "projectId": "proj_cx_06",
+      "title": "Audit Customer Support Ticket Resolution Velocity",
+      "description": "Measure average time-to-first-response and customer satisfaction ratings.",
+      "status": "done",
+      "priority": "low",
+      "dueDate": null,
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_member_03",
+      "labels": [
+        "Support",
+        "Metrics"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_5_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_cx_06_5_2",
+          "title": "Update storybook docs",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_cx_06_5_3",
+          "title": "Notify team on Slack",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cx_06_5_1",
+          "name": "audit_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-03T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-03T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_6",
+      "projectId": "proj_cx_06",
+      "title": "Construct User Persona Mapping & Workflow Diagrams",
+      "description": "Document core workflows for Product Managers, Tech Leads, and Content Creators.",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": null,
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Research",
+        "Personas"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_6_1",
+          "title": "Review design spec",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_cx_06_6_2",
+          "title": "Draft technical implementation plan",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_cx_06_6_3",
+          "title": "Run unit test suite",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-03T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_7",
+      "projectId": "proj_cx_06",
+      "title": "Implement Feature Request Voting Portal",
+      "description": "Allow users to upvote requested feature enhancements and track public roadmap status.",
+      "status": "done",
+      "priority": "high",
+      "dueDate": null,
+      "assigneeId": "usr_member_03",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Community",
+        "Roadmap"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_7_1",
+          "title": "Perform code audit",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cx_06_7_2",
+          "title": "Add inline documentation",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        },
+        {
+          "id": "sub_task_proj_cx_06_7_3",
+          "title": "Verify dark mode appearance",
+          "isCompleted": true,
+          "assigneeId": "usr_member_03"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cx_06_7_1",
+          "name": "implement_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-04T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_8",
+      "projectId": "proj_cx_06",
+      "title": "Analyze Heatmap Data of Task Modal Interactions",
+      "description": "Review click-map telemetry to optimize position of task edit action buttons.",
+      "status": "done",
+      "priority": "low",
+      "dueDate": null,
+      "assigneeId": "usr_viewer_04",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_admin_02",
+      "labels": [
+        "Telemetry",
+        "UI"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_8_1",
+          "title": "Validate input schema",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_cx_06_8_2",
+          "title": "Test mobile responsiveness",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        },
+        {
+          "id": "sub_task_proj_cx_06_8_3",
+          "title": "Deploy preview branch",
+          "isCompleted": true,
+          "assigneeId": "usr_viewer_04"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-04T22:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_9",
+      "projectId": "proj_cx_06",
+      "title": "Conduct 10 One-on-One User Interviews with Power Users",
+      "description": "Gather qualitative feedback on board view customizability and shortcut productivity.",
+      "status": "done",
+      "priority": "high",
+      "dueDate": null,
+      "assigneeId": "usr_admin_02",
+      "reviewerId": "usr_owner_01",
+      "reporterId": "usr_viewer_04",
+      "labels": [
+        "Interviews",
+        "Qualitative"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_9_1",
+          "title": "Refactor helper functions",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cx_06_9_2",
+          "title": "Add keyboard shortcuts",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        },
+        {
+          "id": "sub_task_proj_cx_06_9_3",
+          "title": "Check accessibility contrast",
+          "isCompleted": true,
+          "assigneeId": "usr_admin_02"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_task_proj_cx_06_9_1",
+          "name": "conduct_spec.pdf",
+          "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "type": "application/pdf",
+          "size": 1048576,
+          "uploadedAt": "2026-09-05T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-09-05T10:00:00.000Z"
+    },
+    {
+      "id": "task_proj_cx_06_10",
+      "projectId": "proj_cx_06",
+      "title": "Draft Archival Summary Report for Customer Insights Hub",
+      "description": "Consolidate project findings into executive summary deck prior to project archival.",
+      "status": "done",
+      "priority": "low",
+      "dueDate": null,
+      "assigneeId": "usr_owner_01",
+      "reviewerId": "usr_admin_02",
+      "reporterId": "usr_owner_01",
+      "labels": [
+        "Report",
+        "Archival"
+      ],
+      "subtasks": [
+        {
+          "id": "sub_task_proj_cx_06_10_1",
+          "title": "Bench performance metrics",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_cx_06_10_2",
+          "title": "Update storybook docs",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        },
+        {
+          "id": "sub_task_proj_cx_06_10_3",
+          "title": "Notify team on Slack",
+          "isCompleted": true,
+          "assigneeId": "usr_owner_01"
+        }
+      ],
+      "attachments": [],
+      "createdAt": "2026-09-05T22:00:00.000Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "comment_1",
+      "taskId": "task_proj_mobile_01_1",
+      "userId": "usr_admin_02",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-01T11:00:00.000Z"
+    },
+    {
+      "id": "comment_2",
+      "taskId": "task_proj_mobile_01_1",
+      "userId": "usr_member_03",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-01T12:00:00.000Z"
+    },
+    {
+      "id": "comment_3",
+      "taskId": "task_proj_mobile_01_2",
+      "userId": "usr_member_03",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-01T23:00:00.000Z"
+    },
+    {
+      "id": "comment_4",
+      "taskId": "task_proj_mobile_01_2",
+      "userId": "usr_viewer_04",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "comment_5",
+      "taskId": "task_proj_mobile_01_3",
+      "userId": "usr_viewer_04",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-02T11:00:00.000Z"
+    },
+    {
+      "id": "comment_6",
+      "taskId": "task_proj_mobile_01_3",
+      "userId": "usr_owner_01",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-02T12:00:00.000Z"
+    },
+    {
+      "id": "comment_7",
+      "taskId": "task_proj_mobile_01_4",
+      "userId": "usr_owner_01",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-02T23:00:00.000Z"
+    },
+    {
+      "id": "comment_8",
+      "taskId": "task_proj_mobile_01_4",
+      "userId": "usr_admin_02",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "comment_9",
+      "taskId": "task_proj_mobile_01_5",
+      "userId": "usr_admin_02",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-03T11:00:00.000Z"
+    },
+    {
+      "id": "comment_10",
+      "taskId": "task_proj_mobile_01_5",
+      "userId": "usr_member_03",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-03T12:00:00.000Z"
+    },
+    {
+      "id": "comment_11",
+      "taskId": "task_proj_mobile_01_6",
+      "userId": "usr_member_03",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-03T23:00:00.000Z"
+    },
+    {
+      "id": "comment_12",
+      "taskId": "task_proj_mobile_01_6",
+      "userId": "usr_viewer_04",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-04T00:00:00.000Z"
+    },
+    {
+      "id": "comment_13",
+      "taskId": "task_proj_mobile_01_7",
+      "userId": "usr_viewer_04",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-04T11:00:00.000Z"
+    },
+    {
+      "id": "comment_14",
+      "taskId": "task_proj_mobile_01_7",
+      "userId": "usr_owner_01",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "comment_15",
+      "taskId": "task_proj_mobile_01_8",
+      "userId": "usr_owner_01",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-04T23:00:00.000Z"
+    },
+    {
+      "id": "comment_16",
+      "taskId": "task_proj_mobile_01_8",
+      "userId": "usr_admin_02",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "comment_17",
+      "taskId": "task_proj_mobile_01_9",
+      "userId": "usr_admin_02",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-05T11:00:00.000Z"
+    },
+    {
+      "id": "comment_18",
+      "taskId": "task_proj_mobile_01_9",
+      "userId": "usr_member_03",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-05T12:00:00.000Z"
+    },
+    {
+      "id": "comment_19",
+      "taskId": "task_proj_mobile_01_10",
+      "userId": "usr_member_03",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-05T23:00:00.000Z"
+    },
+    {
+      "id": "comment_20",
+      "taskId": "task_proj_mobile_01_10",
+      "userId": "usr_viewer_04",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-06T00:00:00.000Z"
+    },
+    {
+      "id": "comment_21",
+      "taskId": "task_proj_ds_02_1",
+      "userId": "usr_admin_02",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-01T11:00:00.000Z"
+    },
+    {
+      "id": "comment_22",
+      "taskId": "task_proj_ds_02_1",
+      "userId": "usr_member_03",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-01T12:00:00.000Z"
+    },
+    {
+      "id": "comment_23",
+      "taskId": "task_proj_ds_02_2",
+      "userId": "usr_member_03",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-01T23:00:00.000Z"
+    },
+    {
+      "id": "comment_24",
+      "taskId": "task_proj_ds_02_2",
+      "userId": "usr_viewer_04",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "comment_25",
+      "taskId": "task_proj_ds_02_3",
+      "userId": "usr_viewer_04",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-02T11:00:00.000Z"
+    },
+    {
+      "id": "comment_26",
+      "taskId": "task_proj_ds_02_3",
+      "userId": "usr_owner_01",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-02T12:00:00.000Z"
+    },
+    {
+      "id": "comment_27",
+      "taskId": "task_proj_ds_02_4",
+      "userId": "usr_owner_01",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-02T23:00:00.000Z"
+    },
+    {
+      "id": "comment_28",
+      "taskId": "task_proj_ds_02_4",
+      "userId": "usr_admin_02",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "comment_29",
+      "taskId": "task_proj_ds_02_5",
+      "userId": "usr_admin_02",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-03T11:00:00.000Z"
+    },
+    {
+      "id": "comment_30",
+      "taskId": "task_proj_ds_02_5",
+      "userId": "usr_member_03",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-03T12:00:00.000Z"
+    },
+    {
+      "id": "comment_31",
+      "taskId": "task_proj_ds_02_6",
+      "userId": "usr_member_03",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-03T23:00:00.000Z"
+    },
+    {
+      "id": "comment_32",
+      "taskId": "task_proj_ds_02_6",
+      "userId": "usr_viewer_04",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-04T00:00:00.000Z"
+    },
+    {
+      "id": "comment_33",
+      "taskId": "task_proj_ds_02_7",
+      "userId": "usr_viewer_04",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-04T11:00:00.000Z"
+    },
+    {
+      "id": "comment_34",
+      "taskId": "task_proj_ds_02_7",
+      "userId": "usr_owner_01",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "comment_35",
+      "taskId": "task_proj_ds_02_8",
+      "userId": "usr_owner_01",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-04T23:00:00.000Z"
+    },
+    {
+      "id": "comment_36",
+      "taskId": "task_proj_ds_02_8",
+      "userId": "usr_admin_02",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "comment_37",
+      "taskId": "task_proj_ds_02_9",
+      "userId": "usr_admin_02",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-05T11:00:00.000Z"
+    },
+    {
+      "id": "comment_38",
+      "taskId": "task_proj_ds_02_9",
+      "userId": "usr_member_03",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-05T12:00:00.000Z"
+    },
+    {
+      "id": "comment_39",
+      "taskId": "task_proj_ds_02_10",
+      "userId": "usr_member_03",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-05T23:00:00.000Z"
+    },
+    {
+      "id": "comment_40",
+      "taskId": "task_proj_ds_02_10",
+      "userId": "usr_viewer_04",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-06T00:00:00.000Z"
+    },
+    {
+      "id": "comment_41",
+      "taskId": "task_proj_cloud_03_1",
+      "userId": "usr_admin_02",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-01T11:00:00.000Z"
+    },
+    {
+      "id": "comment_42",
+      "taskId": "task_proj_cloud_03_1",
+      "userId": "usr_member_03",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-01T12:00:00.000Z"
+    },
+    {
+      "id": "comment_43",
+      "taskId": "task_proj_cloud_03_2",
+      "userId": "usr_member_03",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-01T23:00:00.000Z"
+    },
+    {
+      "id": "comment_44",
+      "taskId": "task_proj_cloud_03_2",
+      "userId": "usr_viewer_04",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "comment_45",
+      "taskId": "task_proj_cloud_03_3",
+      "userId": "usr_viewer_04",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-02T11:00:00.000Z"
+    },
+    {
+      "id": "comment_46",
+      "taskId": "task_proj_cloud_03_3",
+      "userId": "usr_owner_01",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-02T12:00:00.000Z"
+    },
+    {
+      "id": "comment_47",
+      "taskId": "task_proj_cloud_03_4",
+      "userId": "usr_owner_01",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-02T23:00:00.000Z"
+    },
+    {
+      "id": "comment_48",
+      "taskId": "task_proj_cloud_03_4",
+      "userId": "usr_admin_02",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "comment_49",
+      "taskId": "task_proj_cloud_03_5",
+      "userId": "usr_admin_02",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-03T11:00:00.000Z"
+    },
+    {
+      "id": "comment_50",
+      "taskId": "task_proj_cloud_03_5",
+      "userId": "usr_member_03",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-03T12:00:00.000Z"
+    },
+    {
+      "id": "comment_51",
+      "taskId": "task_proj_cloud_03_6",
+      "userId": "usr_member_03",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-03T23:00:00.000Z"
+    },
+    {
+      "id": "comment_52",
+      "taskId": "task_proj_cloud_03_6",
+      "userId": "usr_viewer_04",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-04T00:00:00.000Z"
+    },
+    {
+      "id": "comment_53",
+      "taskId": "task_proj_cloud_03_7",
+      "userId": "usr_viewer_04",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-04T11:00:00.000Z"
+    },
+    {
+      "id": "comment_54",
+      "taskId": "task_proj_cloud_03_7",
+      "userId": "usr_owner_01",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "comment_55",
+      "taskId": "task_proj_cloud_03_8",
+      "userId": "usr_owner_01",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-04T23:00:00.000Z"
+    },
+    {
+      "id": "comment_56",
+      "taskId": "task_proj_cloud_03_8",
+      "userId": "usr_admin_02",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "comment_57",
+      "taskId": "task_proj_cloud_03_9",
+      "userId": "usr_admin_02",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-05T11:00:00.000Z"
+    },
+    {
+      "id": "comment_58",
+      "taskId": "task_proj_cloud_03_9",
+      "userId": "usr_member_03",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-05T12:00:00.000Z"
+    },
+    {
+      "id": "comment_59",
+      "taskId": "task_proj_cloud_03_10",
+      "userId": "usr_member_03",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-05T23:00:00.000Z"
+    },
+    {
+      "id": "comment_60",
+      "taskId": "task_proj_cloud_03_10",
+      "userId": "usr_viewer_04",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-06T00:00:00.000Z"
+    },
+    {
+      "id": "comment_61",
+      "taskId": "task_proj_brand_04_1",
+      "userId": "usr_admin_02",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-01T11:00:00.000Z"
+    },
+    {
+      "id": "comment_62",
+      "taskId": "task_proj_brand_04_1",
+      "userId": "usr_member_03",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-01T12:00:00.000Z"
+    },
+    {
+      "id": "comment_63",
+      "taskId": "task_proj_brand_04_2",
+      "userId": "usr_member_03",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-01T23:00:00.000Z"
+    },
+    {
+      "id": "comment_64",
+      "taskId": "task_proj_brand_04_2",
+      "userId": "usr_viewer_04",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "comment_65",
+      "taskId": "task_proj_brand_04_3",
+      "userId": "usr_viewer_04",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-02T11:00:00.000Z"
+    },
+    {
+      "id": "comment_66",
+      "taskId": "task_proj_brand_04_3",
+      "userId": "usr_owner_01",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-02T12:00:00.000Z"
+    },
+    {
+      "id": "comment_67",
+      "taskId": "task_proj_brand_04_4",
+      "userId": "usr_owner_01",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-02T23:00:00.000Z"
+    },
+    {
+      "id": "comment_68",
+      "taskId": "task_proj_brand_04_4",
+      "userId": "usr_admin_02",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "comment_69",
+      "taskId": "task_proj_brand_04_5",
+      "userId": "usr_admin_02",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-03T11:00:00.000Z"
+    },
+    {
+      "id": "comment_70",
+      "taskId": "task_proj_brand_04_5",
+      "userId": "usr_member_03",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-03T12:00:00.000Z"
+    },
+    {
+      "id": "comment_71",
+      "taskId": "task_proj_brand_04_6",
+      "userId": "usr_member_03",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-03T23:00:00.000Z"
+    },
+    {
+      "id": "comment_72",
+      "taskId": "task_proj_brand_04_6",
+      "userId": "usr_viewer_04",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-04T00:00:00.000Z"
+    },
+    {
+      "id": "comment_73",
+      "taskId": "task_proj_brand_04_7",
+      "userId": "usr_viewer_04",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-04T11:00:00.000Z"
+    },
+    {
+      "id": "comment_74",
+      "taskId": "task_proj_brand_04_7",
+      "userId": "usr_owner_01",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "comment_75",
+      "taskId": "task_proj_brand_04_8",
+      "userId": "usr_owner_01",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-04T23:00:00.000Z"
+    },
+    {
+      "id": "comment_76",
+      "taskId": "task_proj_brand_04_8",
+      "userId": "usr_admin_02",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "comment_77",
+      "taskId": "task_proj_brand_04_9",
+      "userId": "usr_admin_02",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-05T11:00:00.000Z"
+    },
+    {
+      "id": "comment_78",
+      "taskId": "task_proj_brand_04_9",
+      "userId": "usr_member_03",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-05T12:00:00.000Z"
+    },
+    {
+      "id": "comment_79",
+      "taskId": "task_proj_brand_04_10",
+      "userId": "usr_member_03",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-05T23:00:00.000Z"
+    },
+    {
+      "id": "comment_80",
+      "taskId": "task_proj_brand_04_10",
+      "userId": "usr_viewer_04",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-06T00:00:00.000Z"
+    },
+    {
+      "id": "comment_81",
+      "taskId": "task_proj_launch_05_1",
+      "userId": "usr_admin_02",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-01T11:00:00.000Z"
+    },
+    {
+      "id": "comment_82",
+      "taskId": "task_proj_launch_05_1",
+      "userId": "usr_member_03",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-01T12:00:00.000Z"
+    },
+    {
+      "id": "comment_83",
+      "taskId": "task_proj_launch_05_2",
+      "userId": "usr_member_03",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-01T23:00:00.000Z"
+    },
+    {
+      "id": "comment_84",
+      "taskId": "task_proj_launch_05_2",
+      "userId": "usr_viewer_04",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "comment_85",
+      "taskId": "task_proj_launch_05_3",
+      "userId": "usr_viewer_04",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-02T11:00:00.000Z"
+    },
+    {
+      "id": "comment_86",
+      "taskId": "task_proj_launch_05_3",
+      "userId": "usr_owner_01",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-02T12:00:00.000Z"
+    },
+    {
+      "id": "comment_87",
+      "taskId": "task_proj_launch_05_4",
+      "userId": "usr_owner_01",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-02T23:00:00.000Z"
+    },
+    {
+      "id": "comment_88",
+      "taskId": "task_proj_launch_05_4",
+      "userId": "usr_admin_02",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "comment_89",
+      "taskId": "task_proj_launch_05_5",
+      "userId": "usr_admin_02",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-03T11:00:00.000Z"
+    },
+    {
+      "id": "comment_90",
+      "taskId": "task_proj_launch_05_5",
+      "userId": "usr_member_03",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-03T12:00:00.000Z"
+    },
+    {
+      "id": "comment_91",
+      "taskId": "task_proj_launch_05_6",
+      "userId": "usr_member_03",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-03T23:00:00.000Z"
+    },
+    {
+      "id": "comment_92",
+      "taskId": "task_proj_launch_05_6",
+      "userId": "usr_viewer_04",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-04T00:00:00.000Z"
+    },
+    {
+      "id": "comment_93",
+      "taskId": "task_proj_launch_05_7",
+      "userId": "usr_viewer_04",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-04T11:00:00.000Z"
+    },
+    {
+      "id": "comment_94",
+      "taskId": "task_proj_launch_05_7",
+      "userId": "usr_owner_01",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "comment_95",
+      "taskId": "task_proj_launch_05_8",
+      "userId": "usr_owner_01",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-04T23:00:00.000Z"
+    },
+    {
+      "id": "comment_96",
+      "taskId": "task_proj_launch_05_8",
+      "userId": "usr_admin_02",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "comment_97",
+      "taskId": "task_proj_launch_05_9",
+      "userId": "usr_admin_02",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-05T11:00:00.000Z"
+    },
+    {
+      "id": "comment_98",
+      "taskId": "task_proj_launch_05_9",
+      "userId": "usr_member_03",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-05T12:00:00.000Z"
+    },
+    {
+      "id": "comment_99",
+      "taskId": "task_proj_launch_05_10",
+      "userId": "usr_member_03",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-05T23:00:00.000Z"
+    },
+    {
+      "id": "comment_100",
+      "taskId": "task_proj_launch_05_10",
+      "userId": "usr_viewer_04",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-06T00:00:00.000Z"
+    },
+    {
+      "id": "comment_101",
+      "taskId": "task_proj_cx_06_1",
+      "userId": "usr_admin_02",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-01T11:00:00.000Z"
+    },
+    {
+      "id": "comment_102",
+      "taskId": "task_proj_cx_06_1",
+      "userId": "usr_member_03",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-01T12:00:00.000Z"
+    },
+    {
+      "id": "comment_103",
+      "taskId": "task_proj_cx_06_2",
+      "userId": "usr_member_03",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-01T23:00:00.000Z"
+    },
+    {
+      "id": "comment_104",
+      "taskId": "task_proj_cx_06_2",
+      "userId": "usr_viewer_04",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "comment_105",
+      "taskId": "task_proj_cx_06_3",
+      "userId": "usr_viewer_04",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-02T11:00:00.000Z"
+    },
+    {
+      "id": "comment_106",
+      "taskId": "task_proj_cx_06_3",
+      "userId": "usr_owner_01",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-02T12:00:00.000Z"
+    },
+    {
+      "id": "comment_107",
+      "taskId": "task_proj_cx_06_4",
+      "userId": "usr_owner_01",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-02T23:00:00.000Z"
+    },
+    {
+      "id": "comment_108",
+      "taskId": "task_proj_cx_06_4",
+      "userId": "usr_admin_02",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "comment_109",
+      "taskId": "task_proj_cx_06_5",
+      "userId": "usr_admin_02",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-03T11:00:00.000Z"
+    },
+    {
+      "id": "comment_110",
+      "taskId": "task_proj_cx_06_5",
+      "userId": "usr_member_03",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-03T12:00:00.000Z"
+    },
+    {
+      "id": "comment_111",
+      "taskId": "task_proj_cx_06_6",
+      "userId": "usr_member_03",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-03T23:00:00.000Z"
+    },
+    {
+      "id": "comment_112",
+      "taskId": "task_proj_cx_06_6",
+      "userId": "usr_viewer_04",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-04T00:00:00.000Z"
+    },
+    {
+      "id": "comment_113",
+      "taskId": "task_proj_cx_06_7",
+      "userId": "usr_viewer_04",
+      "content": "Tested on high-DPI retina display. Visuals are super crisp!",
+      "createdAt": "2026-09-04T11:00:00.000Z"
+    },
+    {
+      "id": "comment_114",
+      "taskId": "task_proj_cx_06_7",
+      "userId": "usr_owner_01",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-04T12:00:00.000Z"
+    },
+    {
+      "id": "comment_115",
+      "taskId": "task_proj_cx_06_8",
+      "userId": "usr_owner_01",
+      "content": "Great progress! Let's ensure we test this thoroughly on iOS Safari.",
+      "createdAt": "2026-09-04T23:00:00.000Z"
+    },
+    {
+      "id": "comment_116",
+      "taskId": "task_proj_cx_06_8",
+      "userId": "usr_admin_02",
+      "content": "Should we consider extracting this into a reusable sub-hook for cleaner state access?",
+      "createdAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "comment_117",
+      "taskId": "task_proj_cx_06_9",
+      "userId": "usr_admin_02",
+      "content": "I've added the updated design specs in Figma. Take a look when you get a chance.",
+      "createdAt": "2026-09-05T11:00:00.000Z"
+    },
+    {
+      "id": "comment_118",
+      "taskId": "task_proj_cx_06_9",
+      "userId": "usr_member_03",
+      "content": "This is blocked until the color tokens refactor is merged into main.",
+      "createdAt": "2026-09-05T12:00:00.000Z"
+    },
+    {
+      "id": "comment_119",
+      "taskId": "task_proj_cx_06_10",
+      "userId": "usr_member_03",
+      "content": "LGTM! Tested locally and all edge cases pass cleanly.",
+      "createdAt": "2026-09-05T23:00:00.000Z"
+    },
+    {
+      "id": "comment_120",
+      "taskId": "task_proj_cx_06_10",
+      "userId": "usr_viewer_04",
+      "content": "Updated the subtasks list to reflect today's sync discussion.",
+      "createdAt": "2026-09-06T00:00:00.000Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "act_1",
+      "taskId": "task_proj_mobile_01_1",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_2",
+      "taskId": "task_proj_mobile_01_1",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-01T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_3",
+      "taskId": "task_proj_mobile_01_2",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_4",
+      "taskId": "task_proj_mobile_01_2",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-01T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_5",
+      "taskId": "task_proj_mobile_01_3",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_6",
+      "taskId": "task_proj_mobile_01_3",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_viewer_04",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-02T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_7",
+      "taskId": "task_proj_mobile_01_4",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_8",
+      "taskId": "task_proj_mobile_01_4",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-02T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_9",
+      "taskId": "task_proj_mobile_01_5",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_10",
+      "taskId": "task_proj_mobile_01_5",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-03T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_11",
+      "taskId": "task_proj_mobile_01_6",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_12",
+      "taskId": "task_proj_mobile_01_6",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-03T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_13",
+      "taskId": "task_proj_mobile_01_7",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_14",
+      "taskId": "task_proj_mobile_01_7",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_viewer_04",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-04T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_15",
+      "taskId": "task_proj_mobile_01_8",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_16",
+      "taskId": "task_proj_mobile_01_8",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-04T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_17",
+      "taskId": "task_proj_mobile_01_9",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_18",
+      "taskId": "task_proj_mobile_01_9",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-05T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_19",
+      "taskId": "task_proj_mobile_01_10",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_20",
+      "taskId": "task_proj_mobile_01_10",
+      "projectId": "proj_mobile_01",
+      "userId": "usr_viewer_04",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-05T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_21",
+      "taskId": "task_proj_ds_02_1",
+      "projectId": "proj_ds_02",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_22",
+      "taskId": "task_proj_ds_02_1",
+      "projectId": "proj_ds_02",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-01T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_23",
+      "taskId": "task_proj_ds_02_2",
+      "projectId": "proj_ds_02",
+      "userId": "usr_viewer_04",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_24",
+      "taskId": "task_proj_ds_02_2",
+      "projectId": "proj_ds_02",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-01T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_25",
+      "taskId": "task_proj_ds_02_3",
+      "projectId": "proj_ds_02",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_26",
+      "taskId": "task_proj_ds_02_3",
+      "projectId": "proj_ds_02",
+      "userId": "usr_owner_01",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-02T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_27",
+      "taskId": "task_proj_ds_02_4",
+      "projectId": "proj_ds_02",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_28",
+      "taskId": "task_proj_ds_02_4",
+      "projectId": "proj_ds_02",
+      "userId": "usr_viewer_04",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-02T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_29",
+      "taskId": "task_proj_ds_02_5",
+      "projectId": "proj_ds_02",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_30",
+      "taskId": "task_proj_ds_02_5",
+      "projectId": "proj_ds_02",
+      "userId": "usr_viewer_04",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-03T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_31",
+      "taskId": "task_proj_ds_02_6",
+      "projectId": "proj_ds_02",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_32",
+      "taskId": "task_proj_ds_02_6",
+      "projectId": "proj_ds_02",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-03T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_33",
+      "taskId": "task_proj_ds_02_7",
+      "projectId": "proj_ds_02",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_34",
+      "taskId": "task_proj_ds_02_7",
+      "projectId": "proj_ds_02",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-04T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_35",
+      "taskId": "task_proj_ds_02_8",
+      "projectId": "proj_ds_02",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_36",
+      "taskId": "task_proj_ds_02_8",
+      "projectId": "proj_ds_02",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-04T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_37",
+      "taskId": "task_proj_ds_02_9",
+      "projectId": "proj_ds_02",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_38",
+      "taskId": "task_proj_ds_02_9",
+      "projectId": "proj_ds_02",
+      "userId": "usr_viewer_04",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-05T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_39",
+      "taskId": "task_proj_ds_02_10",
+      "projectId": "proj_ds_02",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_40",
+      "taskId": "task_proj_ds_02_10",
+      "projectId": "proj_ds_02",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-05T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_41",
+      "taskId": "task_proj_cloud_03_1",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_42",
+      "taskId": "task_proj_cloud_03_1",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-01T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_43",
+      "taskId": "task_proj_cloud_03_2",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_44",
+      "taskId": "task_proj_cloud_03_2",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-01T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_45",
+      "taskId": "task_proj_cloud_03_3",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_46",
+      "taskId": "task_proj_cloud_03_3",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_owner_01",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-02T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_47",
+      "taskId": "task_proj_cloud_03_4",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_48",
+      "taskId": "task_proj_cloud_03_4",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-02T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_49",
+      "taskId": "task_proj_cloud_03_5",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_50",
+      "taskId": "task_proj_cloud_03_5",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-03T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_51",
+      "taskId": "task_proj_cloud_03_6",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_52",
+      "taskId": "task_proj_cloud_03_6",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_owner_01",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-03T23:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_53",
+      "taskId": "task_proj_cloud_03_7",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_54",
+      "taskId": "task_proj_cloud_03_7",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-04T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_55",
+      "taskId": "task_proj_cloud_03_8",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_56",
+      "taskId": "task_proj_cloud_03_8",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-04T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_57",
+      "taskId": "task_proj_cloud_03_9",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_58",
+      "taskId": "task_proj_cloud_03_9",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-05T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_59",
+      "taskId": "task_proj_cloud_03_10",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_60",
+      "taskId": "task_proj_cloud_03_10",
+      "projectId": "proj_cloud_03",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-05T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_61",
+      "taskId": "task_proj_brand_04_1",
+      "projectId": "proj_brand_04",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_62",
+      "taskId": "task_proj_brand_04_1",
+      "projectId": "proj_brand_04",
+      "userId": "usr_viewer_04",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-01T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_63",
+      "taskId": "task_proj_brand_04_2",
+      "projectId": "proj_brand_04",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_64",
+      "taskId": "task_proj_brand_04_2",
+      "projectId": "proj_brand_04",
+      "userId": "usr_viewer_04",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-01T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_65",
+      "taskId": "task_proj_brand_04_3",
+      "projectId": "proj_brand_04",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_66",
+      "taskId": "task_proj_brand_04_3",
+      "projectId": "proj_brand_04",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-02T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_67",
+      "taskId": "task_proj_brand_04_4",
+      "projectId": "proj_brand_04",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_68",
+      "taskId": "task_proj_brand_04_4",
+      "projectId": "proj_brand_04",
+      "userId": "usr_owner_01",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-02T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_69",
+      "taskId": "task_proj_brand_04_5",
+      "projectId": "proj_brand_04",
+      "userId": "usr_viewer_04",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_70",
+      "taskId": "task_proj_brand_04_5",
+      "projectId": "proj_brand_04",
+      "userId": "usr_admin_02",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-03T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_71",
+      "taskId": "task_proj_brand_04_6",
+      "projectId": "proj_brand_04",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_72",
+      "taskId": "task_proj_brand_04_6",
+      "projectId": "proj_brand_04",
+      "userId": "usr_owner_01",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-03T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_73",
+      "taskId": "task_proj_brand_04_7",
+      "projectId": "proj_brand_04",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_74",
+      "taskId": "task_proj_brand_04_7",
+      "projectId": "proj_brand_04",
+      "userId": "usr_viewer_04",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-04T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_75",
+      "taskId": "task_proj_brand_04_8",
+      "projectId": "proj_brand_04",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_76",
+      "taskId": "task_proj_brand_04_8",
+      "projectId": "proj_brand_04",
+      "userId": "usr_owner_01",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-04T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_77",
+      "taskId": "task_proj_brand_04_9",
+      "projectId": "proj_brand_04",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_78",
+      "taskId": "task_proj_brand_04_9",
+      "projectId": "proj_brand_04",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-05T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_79",
+      "taskId": "task_proj_brand_04_10",
+      "projectId": "proj_brand_04",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_80",
+      "taskId": "task_proj_brand_04_10",
+      "projectId": "proj_brand_04",
+      "userId": "usr_viewer_04",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-05T23:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_81",
+      "taskId": "task_proj_launch_05_1",
+      "projectId": "proj_launch_05",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_82",
+      "taskId": "task_proj_launch_05_1",
+      "projectId": "proj_launch_05",
+      "userId": "usr_owner_01",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-01T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_83",
+      "taskId": "task_proj_launch_05_2",
+      "projectId": "proj_launch_05",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_84",
+      "taskId": "task_proj_launch_05_2",
+      "projectId": "proj_launch_05",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-01T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_85",
+      "taskId": "task_proj_launch_05_3",
+      "projectId": "proj_launch_05",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_86",
+      "taskId": "task_proj_launch_05_3",
+      "projectId": "proj_launch_05",
+      "userId": "usr_viewer_04",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-02T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_87",
+      "taskId": "task_proj_launch_05_4",
+      "projectId": "proj_launch_05",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_88",
+      "taskId": "task_proj_launch_05_4",
+      "projectId": "proj_launch_05",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-02T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_89",
+      "taskId": "task_proj_launch_05_5",
+      "projectId": "proj_launch_05",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_90",
+      "taskId": "task_proj_launch_05_5",
+      "projectId": "proj_launch_05",
+      "userId": "usr_owner_01",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-03T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_91",
+      "taskId": "task_proj_launch_05_6",
+      "projectId": "proj_launch_05",
+      "userId": "usr_viewer_04",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_92",
+      "taskId": "task_proj_launch_05_6",
+      "projectId": "proj_launch_05",
+      "userId": "usr_admin_02",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-03T23:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_93",
+      "taskId": "task_proj_launch_05_7",
+      "projectId": "proj_launch_05",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_94",
+      "taskId": "task_proj_launch_05_7",
+      "projectId": "proj_launch_05",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-04T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_95",
+      "taskId": "task_proj_launch_05_8",
+      "projectId": "proj_launch_05",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_96",
+      "taskId": "task_proj_launch_05_8",
+      "projectId": "proj_launch_05",
+      "userId": "usr_owner_01",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-04T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_97",
+      "taskId": "task_proj_launch_05_9",
+      "projectId": "proj_launch_05",
+      "userId": "usr_viewer_04",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_98",
+      "taskId": "task_proj_launch_05_9",
+      "projectId": "proj_launch_05",
+      "userId": "usr_admin_02",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-05T11:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_99",
+      "taskId": "task_proj_launch_05_10",
+      "projectId": "proj_launch_05",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_100",
+      "taskId": "task_proj_launch_05_10",
+      "projectId": "proj_launch_05",
+      "userId": "usr_member_03",
+      "actionType": "comment_added",
+      "timestamp": "2026-09-05T23:00:00.000Z",
+      "details": "added a comment"
+    },
+    {
+      "id": "act_101",
+      "taskId": "task_proj_cx_06_1",
+      "projectId": "proj_cx_06",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_102",
+      "taskId": "task_proj_cx_06_1",
+      "projectId": "proj_cx_06",
+      "userId": "usr_admin_02",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-01T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_103",
+      "taskId": "task_proj_cx_06_2",
+      "projectId": "proj_cx_06",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-01T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_104",
+      "taskId": "task_proj_cx_06_2",
+      "projectId": "proj_cx_06",
+      "userId": "usr_member_03",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-01T23:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_105",
+      "taskId": "task_proj_cx_06_3",
+      "projectId": "proj_cx_06",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_106",
+      "taskId": "task_proj_cx_06_3",
+      "projectId": "proj_cx_06",
+      "userId": "usr_viewer_04",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-02T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_107",
+      "taskId": "task_proj_cx_06_4",
+      "projectId": "proj_cx_06",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-02T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_108",
+      "taskId": "task_proj_cx_06_4",
+      "projectId": "proj_cx_06",
+      "userId": "usr_admin_02",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-02T23:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_109",
+      "taskId": "task_proj_cx_06_5",
+      "projectId": "proj_cx_06",
+      "userId": "usr_member_03",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_110",
+      "taskId": "task_proj_cx_06_5",
+      "projectId": "proj_cx_06",
+      "userId": "usr_owner_01",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-03T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_111",
+      "taskId": "task_proj_cx_06_6",
+      "projectId": "proj_cx_06",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-03T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_112",
+      "taskId": "task_proj_cx_06_6",
+      "projectId": "proj_cx_06",
+      "userId": "usr_viewer_04",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-03T23:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_113",
+      "taskId": "task_proj_cx_06_7",
+      "projectId": "proj_cx_06",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_114",
+      "taskId": "task_proj_cx_06_7",
+      "projectId": "proj_cx_06",
+      "userId": "usr_member_03",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-04T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_115",
+      "taskId": "task_proj_cx_06_8",
+      "projectId": "proj_cx_06",
+      "userId": "usr_admin_02",
+      "actionType": "task_created",
+      "timestamp": "2026-09-04T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_116",
+      "taskId": "task_proj_cx_06_8",
+      "projectId": "proj_cx_06",
+      "userId": "usr_viewer_04",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-04T23:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_117",
+      "taskId": "task_proj_cx_06_9",
+      "projectId": "proj_cx_06",
+      "userId": "usr_viewer_04",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T10:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_118",
+      "taskId": "task_proj_cx_06_9",
+      "projectId": "proj_cx_06",
+      "userId": "usr_admin_02",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-05T11:00:00.000Z",
+      "details": "marked task as done"
+    },
+    {
+      "id": "act_119",
+      "taskId": "task_proj_cx_06_10",
+      "projectId": "proj_cx_06",
+      "userId": "usr_owner_01",
+      "actionType": "task_created",
+      "timestamp": "2026-09-05T22:00:00.000Z",
+      "details": "created the task"
+    },
+    {
+      "id": "act_120",
+      "taskId": "task_proj_cx_06_10",
+      "projectId": "proj_cx_06",
+      "userId": "usr_owner_01",
+      "actionType": "status_changed",
+      "timestamp": "2026-09-05T23:00:00.000Z",
+      "details": "marked task as done"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_1",
+      "userId": "usr_owner_01",
+      "title": "Welcome to Workspace Manager",
+      "message": "You have been added to Acme Tech & Product Platform workspace.",
+      "isRead": true,
+      "type": "system",
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "notif_2",
+      "userId": "usr_owner_01",
+      "title": "Task Assigned",
+      "message": "You were assigned to high-priority task in Next-Gen Mobile Application.",
+      "isRead": false,
+      "type": "task_assigned",
+      "createdAt": "2026-09-03T14:30:00.000Z"
+    },
+    {
+      "id": "notif_3",
+      "userId": "usr_owner_01",
+      "title": "Review Requested",
+      "message": "Sarah Chen requested your review on 'Implement Biometric Auth Flow'.",
+      "isRead": false,
+      "type": "review_requested",
+      "createdAt": "2026-09-05T09:00:00.000Z"
+    },
+    {
+      "id": "notif_4",
+      "userId": "usr_admin_02",
+      "title": "Welcome to Workspace Manager",
+      "message": "You have been added to Acme Tech & Product Platform workspace.",
+      "isRead": true,
+      "type": "system",
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "notif_5",
+      "userId": "usr_admin_02",
+      "title": "Task Assigned",
+      "message": "You were assigned to high-priority task in Next-Gen Mobile Application.",
+      "isRead": false,
+      "type": "task_assigned",
+      "createdAt": "2026-09-03T14:30:00.000Z"
+    },
+    {
+      "id": "notif_6",
+      "userId": "usr_admin_02",
+      "title": "Review Requested",
+      "message": "Sarah Chen requested your review on 'Implement Biometric Auth Flow'.",
+      "isRead": false,
+      "type": "review_requested",
+      "createdAt": "2026-09-05T09:00:00.000Z"
+    },
+    {
+      "id": "notif_7",
+      "userId": "usr_member_03",
+      "title": "Welcome to Workspace Manager",
+      "message": "You have been added to Acme Tech & Product Platform workspace.",
+      "isRead": true,
+      "type": "system",
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "notif_8",
+      "userId": "usr_member_03",
+      "title": "Task Assigned",
+      "message": "You were assigned to high-priority task in Next-Gen Mobile Application.",
+      "isRead": false,
+      "type": "task_assigned",
+      "createdAt": "2026-09-03T14:30:00.000Z"
+    },
+    {
+      "id": "notif_9",
+      "userId": "usr_member_03",
+      "title": "Review Requested",
+      "message": "Sarah Chen requested your review on 'Implement Biometric Auth Flow'.",
+      "isRead": false,
+      "type": "review_requested",
+      "createdAt": "2026-09-05T09:00:00.000Z"
+    },
+    {
+      "id": "notif_10",
+      "userId": "usr_viewer_04",
+      "title": "Welcome to Workspace Manager",
+      "message": "You have been added to Acme Tech & Product Platform workspace.",
+      "isRead": true,
+      "type": "system",
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "notif_11",
+      "userId": "usr_viewer_04",
+      "title": "Task Assigned",
+      "message": "You were assigned to high-priority task in Next-Gen Mobile Application.",
+      "isRead": false,
+      "type": "task_assigned",
+      "createdAt": "2026-09-03T14:30:00.000Z"
+    },
+    {
+      "id": "notif_12",
+      "userId": "usr_viewer_04",
+      "title": "Review Requested",
+      "message": "Sarah Chen requested your review on 'Implement Biometric Auth Flow'.",
+      "isRead": false,
+      "type": "review_requested",
+      "createdAt": "2026-09-05T09:00:00.000Z"
+    }
+  ],
+  "activeUserId": "usr_owner_01",
+  "activeWorkspaceId": "ws_tech_01",
+  "activeProjectId": null,
+  "searchQuery": "",
+  "statusFilter": "all",
+  "priorityFilter": "all",
+  "assigneeFilter": "all"
+}
